@@ -18,3 +18,15 @@ function start(){
         updateDisplay(elapsedTime);
     },100);
 }
+
+
+function stop(){
+    clearInterval(timeId);
+    timeId=null; //set the timeId to null;
+}
+
+function reset(){
+    stop();
+    elapsedTime=0;
+    updateDisplay(elapsedTime);
+}
